@@ -6,3 +6,109 @@
     font-weight: 400;
     font-style: normal;
   }
+
+/* shared styles */
+
+.navbar-item{
+  text-decoration: none;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+  /* nav-bar style */
+
+  nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 80px;
+    /* height: 100px;
+    width: 800px; */
+    
+  }
+
+  .nav-title{
+    display: flex;
+    gap: 10px;
+  }
+
+  nav ul{
+    display: flex;
+    align-items: center; 
+  }
+
+  nav ul li{
+    list-style: none;
+    margin-right: 50px;
+  }
+
+  .home{
+    color: rgb(254, 163, 1);
+  }
+  .about{
+    color: rgb(1, 172, 253);
+  }
+  .facilities{
+    color: rgb(5, 212, 223);
+  }
+  .admission{
+    color: rgb(93, 88, 239);
+  }
+
+  .btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: "Quicksand", serif;
+    border-radius: 8px;
+    border: none;
+    width: 197px;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10;
+    padding: 10px;
+  }
+
+  header{
+    margin: 0px 140px 0 140px;
+    /* background-color:gainsboro; */
+  }
+  /* Banner section style */
+.banner{
+  display: flex;
+  gap: 50px;
+  /* margin: 0px 140px 0 140px; */
+}
+.banner-title{
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+  /* card section style */
+
+
+  /* Story section style */
+
+
+  /* footer section style */
+
+
+
+  /* responsive media query */
+  @media screen and (max-width: 576px) {
+    nav, nav ul{
+      flex-direction: column;
+      align-items: center; 
+    }
+  }
