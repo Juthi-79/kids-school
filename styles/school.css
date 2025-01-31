@@ -248,9 +248,48 @@ gap: 29px;
   background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 }
 
+.story-image{
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  /* border: 1px solid black;
+  border-radius: 16px; */
+}
+
 .story-body{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.story-left{
+  border: 1px solid black;
+  margin: auto;
+  position: relative;
+  width: 540.27px;
+  height: 630.52px;
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
+
+.story-right{
+  border: 1px solid black;
+  width: 601px;
+  height: 622.4px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.story-1, .story-2, .story-3, .story-4{
+  border: 1px solid black;
+  margin: auto;
+  position: relative;
+  /* width: 540.27px;
+  height: 630.52px; */
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
+
+.description{
+  /* background-color: ; */
 }
 
   /* footer section style */
