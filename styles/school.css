@@ -9,6 +9,9 @@
 
 /* shared styles */
 
+.hide{
+  /* display: ; */
+}
 .navbar-item{
   text-decoration: none;
   font-family: "Quicksand", serif;
@@ -90,23 +93,49 @@
   }
   /* Banner section style */
 .banner{
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-  margin: 0px 50px 0 80px;
-  padding-bottom: 2px;
+  /* display: flex;
+  flex-direction: row; */
+  /* gap: 20px; */
+  /* justify-content: space-between; */
+  /* margin: 0px 50px 0 80px; */
+  /* padding-bottom: 2px; */
+
+  /* position: absolute; */
+width: 1500px;
+height: 575px;
+left: 141px;
+top: 100px;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 70px;
+padding: 0px;
+/* background-color: #FF900E; */
+margin-left: 90px;
 }
 .banner-title{
-  /* padding-top: 130px; */
-  /* padding-bottom: 30px; */
-  /* position: absolute; */
-  width: 1170px;
-  height: 575px;
-  /* left: 141px;
-  top: 100px; */
-  /* margin: 122px 518px 122px 0px; */
-  margin: 122px 518px 10px 0px;
+  width: 500px;
+  height: 100px;
+  padding: 150px 50px 150px 0px;
+  /* margin: 122px 518px 10px 0px; */
+  /* background-color: aquamarine; */
+  /* justify-content: center; */
+  align-items: center;
 }
+.banner-picture{
+  /* width: 468.61px;
+  height: 575px; */
+  /* background-color: antiquewhite; */
+}
+
+.title{
+  font-size: 56px;
+font-weight: 700;
+line-height: 61px;
+}
+
 .primary-color{
   color: #FF900E;
 }
@@ -115,12 +144,12 @@
 }
 .banner-description{
   color: rgb(17, 17, 17);
-font-family: Quicksand;
-font-size: 20px;
-font-weight: 400;
-line-height: 25px;
-letter-spacing: 0%;
-text-align: left;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 .btn-enroll{
   font-family: Quicksand;
@@ -271,15 +300,18 @@ gap: 29px;
 }
 
 .story-right{
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  border: none;
   width: 601px;
   height: 622.4px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
 }
 
 .story-1, .story-2, .story-3, .story-4{
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  border: none;
   margin: auto;
   position: relative;
   /* width: 540.27px;
@@ -297,6 +329,8 @@ gap: 29px;
 footer{
   background: rgb(1, 172, 253);
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   color: white;
   padding: 123px 228px 174px 140px;
 }
