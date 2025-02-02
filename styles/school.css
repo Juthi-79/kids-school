@@ -9,8 +9,9 @@
 
 /* shared styles */
 
-.hide{
-  /* display: ; */
+.hidden{
+  /* visibility: hidden; */
+  display: none;
 }
 .navbar-item{
   text-decoration: none;
@@ -42,6 +43,7 @@
   .nav-title{
     display: flex;
     gap: 10px;
+    align-items: center;
   }
 
   nav ul{
@@ -93,14 +95,6 @@
   }
   /* Banner section style */
 .banner{
-  /* display: flex;
-  flex-direction: row; */
-  /* gap: 20px; */
-  /* justify-content: space-between; */
-  /* margin: 0px 50px 0 80px; */
-  /* padding-bottom: 2px; */
-
-  /* position: absolute; */
   width: 1400px;  
   height: 800px;
   left: 141px;
@@ -185,7 +179,7 @@ order: 1;
 flex-grow: 0;
 margin: 0px 50px;
 }
-  /* card section style */
+  /* Standard curriculum section style */
 .card{
   display: flex;
   flex-direction: column;
@@ -224,17 +218,15 @@ gap: 29px;
   padding: 50px 40px 50px 40px;
 }
 
-.card-3{
+.card-1{
   box-sizing: border-box;
-  border: 0.94px solid rgb(242, 232, 255);
+  border: 0.94px solid rgb(222, 245, 255);
   border-radius: 18.86px;
   box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
-  background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
-  justify-content: center;
-  align-items: center;
+  background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
 }
-.read-3{
-  color: rgb(135, 0, 255);
+.read-1{
+  color: rgb(100, 200, 255);
   font-family: Quicksand;
   font-size: 15.09px;
   font-weight: 700;
@@ -260,15 +252,18 @@ gap: 29px;
   text-align: center;
 }
 
-.card-1{
+
+.card-3{
   box-sizing: border-box;
-  border: 0.94px solid rgb(222, 245, 255);
+  border: 0.94px solid rgb(242, 232, 255);
   border-radius: 18.86px;
   box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
-  background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
 }
-.read-1{
-  color: rgb(100, 200, 255);
+.read-3{
+  color: rgb(135, 0, 255);
   font-family: Quicksand;
   font-size: 15.09px;
   font-weight: 700;
@@ -276,18 +271,18 @@ gap: 29px;
   letter-spacing: 0%;
   text-align: center;
 }
-/* .card-item-title{
-  text-align: center;
-} */
 
   /* Story section style */
 .stories{
   background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+  padding: 60px 0px 60px 0px;
 }
 
 .story-body{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  /* gap: 1px; */
+  margin: 150px 110px 150px 110px;
 }
 
 .story-left{
@@ -320,6 +315,7 @@ text-transform: capitalize;
 border: none; 
 position: relative;
 top: -28px;
+left: 38.35px;
 }
 
 .btn-2{
@@ -340,6 +336,7 @@ text-transform: capitalize;
 border: none; 
 position: relative;
 top: -28px;
+left: 38.35px;
 }
 
 .btn-3{
@@ -361,6 +358,7 @@ top: -28px;
   border: none; 
   position: relative;
   top: -28px;
+  left: 38.35px;
   }
 
   .btn-4{
@@ -381,6 +379,7 @@ top: -28px;
     border: none; 
     position: relative;
     top: -28px;
+    left: 38.35px;
     }
 
     .btn-5{
@@ -401,16 +400,26 @@ top: -28px;
       border: none; 
       position: relative;
       top: -28px;
+      left: 38.35px;
       }
-
+.story-heading{
+  padding: 25px 99px 10px 38px;
+}
+.story-description{
+  padding: 10px 68px 0px 38px;
+}
 .story-right{
   /* border: 1px solid black; */
   border: none;
-  width: 601px;
+  width: 701px;
   height: 622.4px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 100px;
+}
+
+.heading{
+  padding: 0px 40px 33px 37px;
 }
 
 .story-1, .story-2, .story-3, .story-4{
@@ -422,6 +431,16 @@ top: -28px;
   height: 630.52px; */
   border-radius: 16px;
   background: rgb(255, 255, 255);
+}
+
+.btn-view{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 900px;
 }
 
 .description{
@@ -439,28 +458,81 @@ footer{
   padding: 123px 228px 174px 140px;
 }
 
-.footer-head{
+.foot-title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.foot-header{
   color: rgb(255, 255, 255);
 font-family: Quicksand;
-font-size: 24px;
-font-weight: 700;
-line-height: 30px;
+font-size: 40px;
+font-weight: 600;
+line-height: 39.51px;
 letter-spacing: 0%;
 text-align: left;
+}
+
+.foot-description{
+  margin-top: 35px;
+}
+
+.footer-head{
+
 }
 .footer-item{
   text-decoration: none;
   font-family: Quicksand;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
   letter-spacing: 0%;
   text-align: left;
+  align-items: left;
   color: white;
+  
+  /* display: flex;
+  flex-direction: column;
+  gap: 30px; */
 }
-
+.footer-item-list{
+  /* text-align: left; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* background-color: #FF900E; */
+}
 .footer-item-list li{
   list-style: none;
+}
+
+.foot-description{
+  /* padding: 10px 00px 5px 0px; */
+  width: 399.02px;
+  height: 100px;
+  left: 148px;
+  top: 2812px;
+}
+
+.footer-about h4{
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer-contact h4{
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 20px;
 }
   /* responsive media query */
   @media screen and (max-width: 576px) {
@@ -468,4 +540,41 @@ text-align: left;
       flex-direction: column;
       align-items: center; 
     }
+    .banner-picture{
+    /* Group 4 */
+    position: static;
+    width: 336.58px;
+    height: 413px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 20px 0px;
+    }
+    .card-container{
+      display: flex;
+      flex-direction: column;
+      }
+      .story-left{
+        display: none;
+      }
+      .nav-title h2, .navbar-list, .btn-primary{
+        display: none;
+      }
+      .navbar{
+        display: display;
+      }
+      footer{
+        flex-direction: column;
+        justify-content: flex-start;
+        width: auto;
+      }
+      .foot-icons{
+        display: flex;
+        gap: 5px;
+      }
+      .footer-contact h4{
+        width: 200px;
+        margin-top: 10px;
+      }
   }
